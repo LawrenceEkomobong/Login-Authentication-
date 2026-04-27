@@ -1,0 +1,34 @@
+<!Doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Creating a login form with appropriate validation</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="section-one">
+        <h2>2026 Unified Tertiary Exams(UTME)</h2>
+        <h3>All JAMB aspirants are required to fill in their details below</h3>
+        </div>
+        <div class="section-two">
+          <form action="#">
+            <label for>Name</label>
+            <input type="text" placeholder="Your name" required>
+            <label for>Email </label>
+            <input type="email" placeholder="Your email" required>
+            <label for>Password</label>
+            <input type="password" placeholder="password" id="password" required>
+            <p id="password-check"><b>Password must be at least 8 characters</b></p>
+            <label for>SN.number</label>
+            <input type="number" placeholder="serial number" required>
+            <button onclick="buttonCheck" id="button">Submit</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
