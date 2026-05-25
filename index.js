@@ -2,8 +2,9 @@ const button = document.querySelector("#button");
 const input = document.querySelector("#password");
 const errorText = document.querySelector("#password-check");
 
-button.addEventListener("click", () => {
+button.addEventListener("click", (event) => {
    // stop form from submitting
+event.preventDefault();
 
   if (input.value.length < 8) {
     errorText.style.display = "block";
@@ -12,3 +13,5 @@ button.addEventListener("click", () => {
     errorText.style.display = "none";
   };
 });
+
+

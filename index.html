@@ -10,20 +10,20 @@
     <main>
       <div class="container">
         <div class="section-one">
-        <h2>2026 Unified Tertiary Exams(UTME)</h2>
-        <h3>All JAMB aspirants are required to fill in their details below</h3>
+        <h2>2026 World Class Exams(WCE)</h2>
+        <h3>All aspirants are required to fill in their details below</h3>
         </div>
         <div class="section-two">
-          <form action="#">
+          <form action="https://formspree.io/f/mdajobej" method="POST">
             <label for>Name</label>
-            <input type="text" placeholder="Your name" required>
+            <input type="text" placeholder="Your name" name="name" required>
             <label for>Email </label>
-            <input type="email" placeholder="Your email" required>
+            <input type="email" placeholder="Your email" name="email" required>
             <label for>Password</label>
-            <input type="password" placeholder="password" id="password" required>
+            <input type="password" placeholder="password" id="password" name="password" required>
             <p id="password-check"><b>Password must be at least 8 characters</b></p>
             <label for>SN.number</label>
-            <input type="number" placeholder="serial number" required>
+            <input type="number" placeholder="serial number"  name="serial number"required>
             <button onclick="buttonCheck" id="button">Submit</button>
           </form>
         </div>
